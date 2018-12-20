@@ -28,13 +28,10 @@ public class Login {
         driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'s')]")).click();
 
         driver.findElement(By.xpath("//label[@for='inputPassword']")).click();
-        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'a')]")).click();
-        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'n')]")).click();
-        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'i')]")).click();
+        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'d')]")).click();
+        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'e')]")).click();
         driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'m')]")).click();
-        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'a')]")).click();
-        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'l')]")).click();
-        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'s')]")).click();
+        driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'o')]")).click();
 
         driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
