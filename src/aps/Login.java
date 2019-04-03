@@ -18,6 +18,13 @@ public class Login {
     public void LoginTest(){
         System.out.println("Starting test");
         //Fill form and login
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         driver.findElement(By.xpath("//label[@for='username']")).click();
         driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'a')]")).click();
         driver.findElement(By.xpath("//div[@class='hg-button hg-standardBtn']//span[contains(text(),'n')]")).click();
@@ -45,7 +52,7 @@ public class Login {
 
         driver = new ChromeDriver(options);
 
-        driver.get("https://grtvap03.korrdot.com/korrXenia/login");
+        driver.get("http://localhost:4200/login");
     }
 
     @AfterMethod
@@ -59,7 +66,7 @@ public class Login {
         }
 
         String expectedURL = driver.getCurrentUrl();
-        String actualURL="https://grtvap03.korrdot.com/korrXenia/landing";
+        String actualURL="http://localhost:4200/accounts";
         Assert.assertEquals(actualURL, expectedURL);
         System.out.println("Test PASS \n" +expectedURL);
 
